@@ -1,0 +1,21 @@
+import cn from 'classnames';
+import { type ReactNode } from 'react';
+
+interface ButtonInterface {
+  children?: ReactNode;
+  classNames?: string;
+  onClick?: any;
+}
+
+const Button = ({ classNames, children, onClick }: ButtonInterface) => {
+  return (
+    <button
+      className={cn('font-medium bg-zinc-700 hover:bg-zinc-600', classNames)}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
+};
+
+export default Button;

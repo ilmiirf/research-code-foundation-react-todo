@@ -1,0 +1,28 @@
+{
+  "todos": [
+    {
+      "title": "Todo pertama : membuat sate",
+      "userId": 1,
+      "isComplete": false,
+      "id": 1
+    },
+    {
+      "title": "Berkebun : menanam pohon mangga",
+      "userId": 1,
+      "isComplete": false,
+      "id": 2
+    },
+    {
+      "title": "Belanja mingguan",
+      "userId": 1,
+      "isComplete": false,
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Shan"
+    }
+  ]
+}
