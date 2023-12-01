@@ -1,7 +1,7 @@
 import {
   useGetTodosQuery,
   useDeleteTodoMutation,
-} from '../../../services/todoApi';
+} from '@/services/todoApi';
 import View from './TodoList.View';
 
 const TodoList = () => {
