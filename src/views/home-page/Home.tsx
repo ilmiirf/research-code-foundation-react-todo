@@ -1,13 +1,13 @@
-import HomePageView from './HomePageView';
+import HomeView from './HomeView';
 import { useNavigate } from 'react-router-dom';
 
-const HomePage = () => {
+const Home = () => {
   const navigate = useNavigate();
   const handleNavigate = () => {
     navigate('/todo');
     window.location.reload();
   };
-  return <HomePageView navigate={handleNavigate} />;
+  return <HomeView navigate={handleNavigate} />;
 };
 
-export default HomePage;
+export default Home;

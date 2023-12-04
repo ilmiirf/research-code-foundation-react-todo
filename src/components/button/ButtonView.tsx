@@ -7,15 +7,13 @@ export interface ButtonInterface {
   onClick?: any;
 }
 
-const ButtonView = ({ classNames, children, onClick }: ButtonInterface) => {
-  return (
-    <button
-      className={cn('font-medium bg-zinc-700 hover:bg-zinc-600', classNames)}
-      onClick={onClick}
-    >
-      {children}
-    </button>
-  );
-};
+const ButtonView = ({ classNames, children, onClick }: ButtonInterface) => (
+  <button
+    className={cn('font-medium bg-zinc-700 hover:bg-zinc-600', classNames)}
+    onClick={onClick}
+  >
+    {children}
+  </button>
+);
 
 export default ButtonView;

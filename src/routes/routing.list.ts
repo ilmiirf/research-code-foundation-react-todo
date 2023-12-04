@@ -5,7 +5,7 @@ export const routingList: RouteType[] = [
   {
     label: 'Home',
     element: createElement(
-      lazy(async () => await import('../views/home-page/HomePage')),
+      lazy(async () => await import('../views/home-page/Home')),
     ),
     path: '/',
   },
