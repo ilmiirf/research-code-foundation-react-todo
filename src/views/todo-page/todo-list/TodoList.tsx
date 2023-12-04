@@ -5,17 +5,11 @@ const TodoList = () => {
   const { data: todos, isLoading, error } = useGetTodosQuery();
   const [deleteTodo] = useDeleteTodoMutation();
 
-  if (error) {
-    return <div>error</div>;
-  }
+  if (error) return <div>error</div>;
 
-  if (isLoading) {
-    return <div>Loading ..... </div>;
-  }
+  if (isLoading) return <div>Loading ..... </div>;
 
-  if (!todos) {
-    return <div>No Task</div>;
-  }
+  if (!todos) return <div>No Task</div>;
 
   return (
     <TodoListView
