@@ -1,4 +1,4 @@
-import Layout from './components/layout';
+import Layout from './components/layout/Layout';
 import Routing from './routes/Routing';
 
 const App = () => {

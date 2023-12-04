@@ -1,11 +1,11 @@
 import { type ReactNode } from 'react';
-import Navbar from './navbar';
+import Navbar from './navbar/Navbar';
 
 interface LayoutInterface {
   children: ReactNode;
 }
 
-const View = ({ children }: LayoutInterface) => {
+const LayoutView = ({ children }: LayoutInterface) => {
   return (
     <section>
       <Navbar />
@@ -14,4 +14,4 @@ const View = ({ children }: LayoutInterface) => {
   );
 };
 
-export default View;
+export default LayoutView;

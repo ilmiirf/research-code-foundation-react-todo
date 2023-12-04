@@ -1,4 +1,4 @@
-import View from './Layout.View';
+import LayoutView from './LayoutView';
 import { type ReactNode } from 'react';
 
 interface LayoutInterface {
@@ -6,7 +6,7 @@ interface LayoutInterface {
 }
 
 const Layout = ({ children }: LayoutInterface) => {
-  return <View children={children} />;
+  return <LayoutView children={children} />;
 };
 
 export default Layout;

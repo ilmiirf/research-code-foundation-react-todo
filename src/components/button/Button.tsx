@@ -1,20 +1,8 @@
-import cn from 'classnames';
-import { type ReactNode } from 'react';
-
-interface ButtonInterface {
-  children?: ReactNode;
-  classNames?: string;
-  onClick?: any;
-}
+import ButtonView, { type ButtonInterface } from './ButtonView';
 
 const Button = ({ classNames, children, onClick }: ButtonInterface) => {
   return (
-    <button
-      className={cn('font-medium bg-zinc-700 hover:bg-zinc-600', classNames)}
-      onClick={onClick}
-    >
-      {children}
-    </button>
+    <ButtonView classNames={classNames} onClick={onClick} children={children} />
   );
 };
 

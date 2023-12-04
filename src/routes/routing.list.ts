@@ -5,14 +5,14 @@ export const routingList: RouteType[] = [
   {
     label: 'Home',
     element: createElement(
-      lazy(async () => await import('../views/home-page')),
+      lazy(async () => await import('../views/home-page/HomePage')),
     ),
     path: '/',
   },
   {
     label: 'Todo',
     element: createElement(
-      lazy(async () => await import('../views/todo-page')),
+      lazy(async () => await import('../views/todo-page/TodoPage')),
     ),
     path: '/todo',
   },

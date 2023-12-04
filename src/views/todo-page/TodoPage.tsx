@@ -1,7 +1,7 @@
-import View from './TodoPage.View';
+import TodoPageView from './TodoPageView';
 
 const TodoPage = () => {
-  return <View />;
+  return <TodoPageView />;
 };
 
 export default TodoPage;

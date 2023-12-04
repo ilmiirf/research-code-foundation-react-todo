@@ -9,7 +9,7 @@ interface TypeView {
   onDelete: (id: number) => void;
 }
 
-const View = ({ data, isLoading, error, onDelete }: TypeView) => {
+const TodoListView = ({ data, isLoading, error, onDelete }: TypeView) => {
   if (error) {
     return <div>error</div>;
   }
@@ -47,4 +47,4 @@ const View = ({ data, isLoading, error, onDelete }: TypeView) => {
   );
 };
 
-export default memo(View);
+export default memo(TodoListView);

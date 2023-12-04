@@ -1,8 +1,5 @@
-import {
-  useGetTodosQuery,
-  useDeleteTodoMutation,
-} from '../../../services/todoApi';
-import View from './TodoList.View';
+import { useGetTodosQuery, useDeleteTodoMutation } from '@/services/todoApi';
+import TodoListView from './TodoListView';
 
 const TodoList = () => {
   const { data: todos, isLoading, error } = useGetTodosQuery();
@@ -21,7 +18,7 @@ const TodoList = () => {
   }
 
   return (
-    <View
+    <TodoListView
       data={todos}
       isLoading={isLoading}
       error={error}

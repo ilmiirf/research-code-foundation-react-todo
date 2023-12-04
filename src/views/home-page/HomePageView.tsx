@@ -4,7 +4,7 @@ interface TypeView {
   navigate: () => void;
 }
 
-const View = ({ navigate }: TypeView) => {
+const HomePageView = ({ navigate }: TypeView) => {
   return (
     <main className="flex flex-col justify-center h-screen gap-6 place-items-center">
       <h1 className="mb-5 text-6xl font-extrabold">
@@ -24,4 +24,4 @@ const View = ({ navigate }: TypeView) => {
   );
 };
 
-export default View;
+export default HomePageView;

@@ -7,7 +7,7 @@ interface TypeView {
   onAddTodo: (event: React.FormEvent) => void;
 }
 
-const View = ({ data, onInputChange, onAddTodo }: TypeView) => {
+const AddTodoView = ({ data, onInputChange, onAddTodo }: TypeView) => {
   return (
     <div className="mb-6 ">
       <input
@@ -25,4 +25,4 @@ const View = ({ data, onInputChange, onAddTodo }: TypeView) => {
   );
 };
 
-export default View;
+export default AddTodoView;

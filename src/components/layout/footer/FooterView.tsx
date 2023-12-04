@@ -1,4 +1,4 @@
-const View = () => {
+const FooterView = () => {
   return (
     <>
       <h1>footer</h1>
@@ -7,4 +7,4 @@ const View = () => {
   );
 };
 
-export default View;
+export default FooterView;

@@ -1,7 +1,7 @@
 import { useAddTodoMutation } from '@/services/todoApi';
 import { useState } from 'react';
 import { type TodoType } from '@/types/todoType';
-import View from './AddTodo.View';
+import AddTodoView from './AddTodoView';
 
 const AddTodo = () => {
   const initialValue = { title: '', userId: 1, isComplete: false };
@@ -27,7 +27,11 @@ const AddTodo = () => {
   };
 
   return (
-    <View data={todo} onInputChange={handleChange} onAddTodo={handleAddTodo} />
+    <AddTodoView
+      data={todo}
+      onInputChange={handleChange}
+      onAddTodo={handleAddTodo}
+    />
   );
 };
 

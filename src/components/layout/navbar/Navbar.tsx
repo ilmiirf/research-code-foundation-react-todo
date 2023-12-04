@@ -1,7 +1,7 @@
-import View from './Navbar.View';
+import NavbarView from './NavbarView';
 
 const Navbar = () => {
-  return <View />;
+  return <NavbarView />;
 };
 
 export default Navbar;

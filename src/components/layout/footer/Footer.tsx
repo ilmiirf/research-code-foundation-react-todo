@@ -1,7 +1,7 @@
-import View from './Footer.View';
+import FooterView from './FooterView';
 
 const Footer = () => {
-  return <View />;
+  return <FooterView />;
 };
 
 export default Footer;

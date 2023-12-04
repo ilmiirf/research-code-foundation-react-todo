@@ -1,4 +1,4 @@
-const View = () => {
+const NavbarView = () => {
   return (
     <header>
       <nav className="fixed flex flex-wrap items-center justify-between w-screen px-6 py-5 bg-zinc-800">
@@ -16,4 +16,4 @@ const View = () => {
   );
 };
 
-export default View;
+export default NavbarView;
