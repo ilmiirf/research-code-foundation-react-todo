@@ -1,0 +1,19 @@
+.home-container {
+  @apply flex flex-col justify-center h-screen gap-6 place-items-center;
+}
+
+.home__header {
+  @apply mb-5 text-6xl font-extrabold;
+}
+
+.home__body {
+  @apply text-sm;
+}
+
+.home__sub-header {
+  @apply text-2xl font-medium;
+}
+
+.home__button {
+  @apply px-8 py-4 rounded-2xl mt-5;
+}

@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import { type TodoType } from '@/types/todoType';
 import { TrashIcon } from '@heroicons/react/24/solid';
+import './TodoList.css';
 
 interface TypeView {
   data: TodoType[] | undefined;
@@ -11,19 +12,19 @@ interface TypeView {
 
 const TodoListView = ({ data, onDelete }: TypeView) => (
   <div className="px-96">
-    <p className="mb-4 text-2xl font-semibold"> List Todo</p>
+    <p className="todo-header"> List Todo</p>
     {data?.map((todo) => (
       <article key={todo.id}>
-        <div className="flex items-center justify-between w-full mb-3 rounded-lg ps-4 bg-zinc-200">
-          <p className="text-lg text-zinc-900">{todo.title}</p>
+        <div className="todo-list__wrapper">
+          <p className="todo-list__text">{todo.title}</p>
           <button
-            className="px-8 py-4 rounded-r-lg"
+            className="todo-list__button"
             onClick={() => {
               onDelete(todo.id);
               window.location.reload();
             }}
           >
-            <TrashIcon className={`h-6 w-6 text-red-900 hover:text-red-700`} />
+            <TrashIcon className={`todo-list__button-icon`} />
           </button>
         </div>
       </article>

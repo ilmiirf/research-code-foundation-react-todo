@@ -1,0 +1,19 @@
+.todo-header {
+  @apply mb-4 text-2xl font-semibold;
+}
+
+.todo-list__wrapper {
+  @apply flex items-center justify-between w-full mb-3 rounded-lg ps-4 bg-zinc-200;
+}
+
+.todo-list__text {
+  @apply text-lg text-zinc-900 w-full text-left;
+}
+
+.todo-list__button {
+  @apply px-8 py-4 rounded-r-lg;
+}
+
+.todo-list__button-icon {
+  @apply h-6 w-6 text-red-900 hover:text-red-700;
+}

@@ -1,5 +1,6 @@
 import cn from 'classnames';
 import { type ReactNode } from 'react';
+import './Button.css';
 
 export interface ButtonInterface {
   children?: ReactNode;
@@ -8,10 +9,7 @@ export interface ButtonInterface {
 }
 
 const ButtonView = ({ classNames, children, onClick }: ButtonInterface) => (
-  <button
-    className={cn('font-medium bg-zinc-700 hover:bg-zinc-600', classNames)}
-    onClick={onClick}
-  >
+  <button className={cn('button-base', classNames)} onClick={onClick}>
     {children}
   </button>
 );
