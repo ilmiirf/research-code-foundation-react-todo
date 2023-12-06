@@ -1,4 +1,5 @@
-import ButtonView, { type ButtonInterface } from './ButtonView';
+import ButtonView from './ButtonView';
+import { type ButtonInterface } from './buttonType';
 
 const Button = ({ classNames, children, onClick }: ButtonInterface) => {
   return (

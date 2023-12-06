@@ -1,12 +1,6 @@
 import cn from 'classnames';
-import { type ReactNode } from 'react';
 import './Button.css';
-
-export interface ButtonInterface {
-  children?: ReactNode;
-  classNames?: string;
-  onClick?: any;
-}
+import { type ButtonInterface } from './buttonType';
 
 const ButtonView = ({ classNames, children, onClick }: ButtonInterface) => (
   <button className={cn('button-base', classNames)} onClick={onClick}>

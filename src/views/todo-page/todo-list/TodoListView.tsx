@@ -1,16 +1,9 @@
 import { memo } from 'react';
-import { type TodoType } from '@/types/todoType';
 import { TrashIcon } from '@heroicons/react/24/solid';
 import './TodoList.css';
+import { type TodoListInterface } from './todoListType';
 
-interface TypeView {
-  data: TodoType[] | undefined;
-  isLoading?: boolean;
-  error?: undefined;
-  onDelete: (id: number) => void;
-}
-
-const TodoListView = ({ data, onDelete }: TypeView) => (
+const TodoListView = ({ data, onDelete }: TodoListInterface) => (
   <div className="px-96">
     <p className="todo-header"> List Todo</p>
     {data?.map((todo) => (

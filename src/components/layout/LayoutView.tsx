@@ -1,9 +1,5 @@
-import { type ReactNode } from 'react';
 import Navbar from '@/components/navbar/Navbar';
-
-interface LayoutInterface {
-  children: ReactNode;
-}
+import { type LayoutInterface } from './layoutType';
 
 const LayoutView = ({ children }: LayoutInterface) => (
   <section>

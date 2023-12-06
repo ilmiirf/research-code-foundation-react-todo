@@ -1,14 +1,8 @@
-import { type TodoType } from '@/types/todoType';
 import Button from '@/components/button/Button';
 import './AddTodo.css';
+import { type AddTodoInterface } from './addTodoType';
 
-interface TypeView {
-  data: Pick<TodoType, 'title'>;
-  onInputChange: ({ target }: React.ChangeEvent<HTMLInputElement>) => void;
-  onAddTodo: (event: React.FormEvent) => void;
-}
-
-const AddTodoView = ({ data, onInputChange, onAddTodo }: TypeView) => (
+const AddTodoView = ({ data, onInputChange, onAddTodo }: AddTodoInterface) => (
   <div className="mb-6 ">
     <input
       className="add-todo__input"

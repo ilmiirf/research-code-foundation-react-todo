@@ -1,11 +1,8 @@
 import Button from '@/components/button/Button';
 import './Home.css';
+import { type HomeInterface } from './homeType';
 
-interface TypeView {
-  navigate: () => void;
-}
-
-const HomeView = ({ navigate }: TypeView) => (
+const HomeView = ({ navigate }: HomeInterface) => (
   <main className="home-container">
     <h1 className="home__header">Code Foundation React Web App</h1>
     <p className="home__body">
