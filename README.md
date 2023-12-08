@@ -4,6 +4,10 @@ How to start
 
 # `json-server --watch db.json`
 
+Scenario test
+
+![Alt text](public/image.png)
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
