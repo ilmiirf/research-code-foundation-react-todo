@@ -20,7 +20,6 @@ const AddTodo = () => {
     try {
       await addTodo(todo).unwrap();
       setTodo(initialValue);
-      window.location.reload();
     } catch {
       console.log('error save todo');
     }

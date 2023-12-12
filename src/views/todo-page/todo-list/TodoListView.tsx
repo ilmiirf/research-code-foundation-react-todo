@@ -14,7 +14,6 @@ const TodoListView = ({ data, onDelete }: TodoListInterface) => (
             className="todo-list__button"
             onClick={() => {
               onDelete(todo.id);
-              window.location.reload();
             }}
           >
             <TrashIcon className={`todo-list__button-icon`} />

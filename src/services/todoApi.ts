@@ -4,9 +4,11 @@ import { type TodoType } from '@/types/todoType';
 export const todoApi = createApi({
   reducerPath: 'TodoServices',
   baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3000/' }),
+  tagTypes: ['Todos'],
   endpoints: (builder) => ({
     getTodos: builder.query<TodoType[], void>({
       query: () => '/todos',
+      providesTags: ['Todos'],
     }),
     addTodo: builder.mutation<TodoType, Partial<TodoType>>({
       query: (newTodo) => ({
@@ -14,6 +16,7 @@ export const todoApi = createApi({
         method: 'POST',
         body: newTodo,
       }),
+      invalidatesTags: ['Todos'],
     }),
     updateTodo: builder.mutation<void, TodoType>({
       query: (id, ...updates) => ({
@@ -21,12 +24,14 @@ export const todoApi = createApi({
         method: 'PUT',
         body: updates,
       }),
+      invalidatesTags: ['Todos'],
     }),
     deleteTodo: builder.mutation<{ success: boolean; id: number }, number>({
       query: (id) => ({
         url: `/todos/${id}`,
         method: 'DELETE',
       }),
+      invalidatesTags: ['Todos'],
     }),
   }),
 });
